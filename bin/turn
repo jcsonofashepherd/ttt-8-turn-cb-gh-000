@@ -7,5 +7,4 @@ puts "Welcome to Tic Tac Toe!"
 display_board(board)
 times.9 do
   turn(board)
-  display_board(board)
 end
