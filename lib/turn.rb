@@ -30,10 +30,13 @@ def move(board, index, icon = "X")
   board[index] = icon
 end
 
+def input_to_index(input)
+  index = input.to_i - 1
+end
+
 def turn(board)
   puts "Please enter 1-9:"
-  index = gets.strip
-  index = move.to_i - 1
+  index = input_to_index(gets.strip)
   if valid_move?(board, index)
     move(board, index, icon)
   else
